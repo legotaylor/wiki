@@ -2,6 +2,7 @@ title: dannytaylor
 theme: just-the-docs
 languages: ["en"]
 default_lang: "en"
+lang_from_path: true
 exclude_from_localization: ["javascript", "images", "css", "public", "sitemap"]
 parallel_localization: true
 url: https://wiki.mclegoman.com
