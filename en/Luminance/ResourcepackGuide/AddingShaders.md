@@ -8,8 +8,7 @@ nav_order: 2
 # Adding a Shader
 
 {: .note }
-> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
-
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide), which is licenced under [LGPL-3.0-or-later](https://github.com/mclegoman/luminance/blob/master/licence).
 
 To add a shader, we just add a new file for it in `luminance/`
 
@@ -91,7 +90,7 @@ assets/tutorial_shader/shaders/post/example.json
 ```
 
 Now, if i activate the shader, it will do the fun outline effect!
-![](https://wiki.mclegoman.com/assets/img/sobel.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/sobel.png)
 
 There are 2 parts to the post shader, a list of targets, and a list of passes
 
@@ -424,7 +423,7 @@ The `"count"` is how many of that number is in the `"values"` list
 
 However, its much simpler to just view it in soup!
 
-![](https://wiki.mclegoman.com/assets/img/uniformsview.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/uniformsview.png)
 
 Which makes it much easier to see what uniforms everything has (note that soup visually removes the post/ from the names of the passes)
 
@@ -477,17 +476,17 @@ assets/tutorial_shader/post_effect/example.json
 
 It will blur the sobel slightly horizontally, creating 6-7 pixel wide lines
 
-![](https://wiki.mclegoman.com/assets/img/box_blur.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/box_blur.png)
 
 There's an interesting checkerboard thing happening, i think because of an optimisation that box_blur does
 
 Changing the box blur to luminance:post/gaussian, which has mostly the same structure, looks a little more as expected
 
-![](https://wiki.mclegoman.com/assets/img/gaussian.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/gaussian.png)
 
 I like how it looks when i change this value here to 6, so lets make that part of the shader by default!
 
-![](https://wiki.mclegoman.com/assets/img/parameters.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/parameters.png)
 
 Soup tells us the name of the variable, so we can just add it to the sobel passes uniforms like this
 
@@ -519,7 +518,7 @@ Soup tells us the name of the variable, so we can just add it to the sobel passe
 
 Luminance allows for the values to be dynamic, accessible in soup like this:
 
-![](https://wiki.mclegoman.com/assets/img/blinking.gif)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/blinking.gif)
 
 Here the 2nd distance value has been set to go from 4 to 5 every 1 second, creating an interesting blinking effect
 
@@ -565,7 +564,7 @@ If a shader's uniform name is already the name of a dynamic uniform (like it is 
 
 Ok this is looking cool, and i noticed that if you stack phosphor you get some funky trails that are helped by the increased width from the blur and the offset
 
-![](https://wiki.mclegoman.com/assets/img/phosphor.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/phosphor.png)
 
 Wait, how does phosphor work? let's take a look: (dont worry, the heading will make sense after this quick diversion :P)
 
@@ -743,7 +742,7 @@ Let's try reverse engineer what this does:
 - We know that the uniform Phosphor is set to [0.95, 0.95, 0.95], and its being multiplied by the rgb value of the previous frame, this lines up with what we see in game - every frame the trail gets a little darker
 - The max() function appears to wrap around the decayed previous color, and the current color, so the overall color of each pixel should be the highest between the current pixel and the previous pixel but a little smaller, this lines up with what we see in game - if we look at some red and green blocks and shake our head, the green channel from the green blocks leaks into the red but slowly decays as it's not being refreshed by CurrTexel and each frame it gets multiplied by 0.95, the red channel stays however, as every frame the red value from the red block is higher than the decayed red value of the previous frame
 
-![](https://wiki.mclegoman.com/assets/img/redandgreen.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/redandgreen.png)
 
 Interestingly, despite being used as motion blur, the overall function is really just `max(a*0.95, b)` for each rgb value in the two samplers - so theres nothing stopping us from using something other than the previous frame as our prev sampler, or using a different multiplier in the Phosphor uniform for only a specific channel
 
@@ -751,7 +750,7 @@ Interestingly, despite being used as motion blur, the overall function is really
 
 So that gives me an idea, what if I set the In on a phosphor pass to minecraft:main, and the Prev to the fun blurred sobel, if our theory on how the shader works is correct, the phosphor program should be able to combine the two with a per channel max() function, and it will also have a builtin per channel multiplier for our sobel target
 
-![](https://wiki.mclegoman.com/assets/img/example_shader1.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/example_shader1.png)
 
 Yeah! that looks cool, i had to increase the Phosphor values to [ 5.0, 5.0, 5.0 ] to get the sobelness to show up well, which as before was simple to make default to the shader.
 

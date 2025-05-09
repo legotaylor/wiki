@@ -8,7 +8,7 @@ nav_order: 6
 # Perspective
 
 {: .note }
-> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide), which is licenced under [LGPL-3.0-or-later](https://github.com/mclegoman/luminance/blob/master/licence).
 
 
 This page is for [Perspective](https://modrinth.com/mod/mclegoman-perspective) specific resourcepack features.

@@ -8,7 +8,7 @@ nav_order: 1
 # Resourcepack Setup
 
 {: .note }
-> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide), which is licenced under [LGPL-3.0-or-later](https://github.com/mclegoman/luminance/blob/master/licence).
 
 
 For these examples, I will be using a folder layout that looks like this:
@@ -100,7 +100,7 @@ assets/minecraft/luminance/sobel.json - replaces the list, so sobel gets removed
 }
 ```
 
-![](https://wiki.mclegoman.com/assets/img/soupgroup.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/soupgroup.png)
 
 
 ## Adding Shaders

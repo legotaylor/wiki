@@ -8,7 +8,7 @@ nav_order: 3
 # Writing Shader Code
 
 {: .note }
-> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide), which is licenced under [LGPL-3.0-or-later](https://github.com/mclegoman/luminance/blob/master/licence).
 
 
 ```
@@ -343,7 +343,7 @@ void main() {
 }
 ```
 
-![](https://wiki.mclegoman.com/assets/img/mod.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/mod.png)
 
 We can use oneTexel to get adjacent pixels, here I add on the difference between the current pixel and the one above to see how it looks - if, for example, I wanted to look 2 pixels to the left, I could do `texCoord+vec2(oneTexel.x*2.0, 0.0)`
 
@@ -363,7 +363,7 @@ void main() {
 
 This shader is adding the difference between the adjacent pixel to the image, so where the colors, change, it gets a little brighter - and this difference calculation is on the raw pixels, so this doesn't happen where the modulo is creating discontinuities.
 
-![](https://wiki.mclegoman.com/assets/img/outline.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/outline.png)
 
 This creates an interesting bumpy effect, however its quite subtle, so we can use a uniform to allow its brightness to be more dynamically adjusted
 
@@ -430,7 +430,7 @@ assets/tutorial_shader/shaders/post/example_post.json [2]
 ]
 ```
 
-![](https://wiki.mclegoman.com/assets/img/uniforms.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/uniforms.png)
 
 Yeah! that's looking better!, now, what if instead of the difference being based on color, it's based on depth? let's set up another sampler!
 
@@ -518,7 +518,7 @@ void main() {
 }
 ```
 
-![](https://wiki.mclegoman.com/assets/img/depth_fail.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/depth_fail.png)
 
 Well that's weird, my outlines are all red, and I had to set the BumpScale to 100 to even see them!
 
@@ -551,7 +551,7 @@ void main(){
 
 We just wrap each `texture(...).r` with the `LinearizeDepth(...)` function defined above `main()`, and now the values are measured in blocks!
 
-![](https://wiki.mclegoman.com/assets/img/depth.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/depth.png)
 
 Yeah! now there's an outline that fades in as long as the change in distance is around a block, the mod(0.5) colors are a little ugly, so I'll try something else
 
@@ -577,7 +577,7 @@ void main(){
 }
 ```
 
-![](https://wiki.mclegoman.com/assets/img/depth_2.png)
+![](https://wiki.mclegoman.com/assets/img/ResourcepackGuide/depth_2.png)
 
 Woah! this looks cool! The overall shader code is mostly the same as before, ive just changed how the color is calculated
 
