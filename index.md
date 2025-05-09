@@ -1,1 +1,5 @@
-# wiki
+---
+title: Home
+layout: home
+---
+
