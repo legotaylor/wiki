@@ -3,6 +3,7 @@ title: Resourcepack Setup
 layout: page
 lang: en
 parent: Resourcepack Guide
+nav_order: 1
 ---
 # Resourcepack Setup
 

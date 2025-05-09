@@ -3,6 +3,7 @@ title: Adding a Shader
 layout: page
 lang: en
 parent: Resourcepack Guide
+nav_order: 2
 ---
 # Adding a Shader
 

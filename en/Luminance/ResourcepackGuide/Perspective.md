@@ -3,6 +3,7 @@ title: Perspective
 layout: page
 lang: en
 parent: Resourcepack Guide
+nav_order: 6
 ---
 # Perspective
 

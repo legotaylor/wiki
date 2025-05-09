@@ -3,6 +3,7 @@ title: Documentation
 layout: home
 lang: en
 redirect_from: /en
+nav_order: 1
 ---
 # Danny-Taylor's Developer Wiki
 

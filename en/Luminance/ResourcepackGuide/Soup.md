@@ -3,6 +3,7 @@ title: Souper Secret Settings
 layout: page
 lang: en
 parent: Resourcepack Guide
+nav_order: 5
 ---
 # Souper Secret Settings
 

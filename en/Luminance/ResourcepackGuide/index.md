@@ -3,6 +3,7 @@ title: Resourcepack Guide
 layout: page
 lang: en
 parent: Luminance
+nav_order: 1
 ---
 # Resourcepack Guide
 

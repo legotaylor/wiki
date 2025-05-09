@@ -3,6 +3,7 @@ title: Writing Shader Code
 layout: page
 lang: en
 parent: Resourcepack Guide
+nav_order: 3
 ---
 # Writing Shader Code
 
