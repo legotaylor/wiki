@@ -33,11 +33,8 @@ callouts:
     title: Warning
     color: red
   author:
-    title: Author
+    title: Author(s)
     color: pink
-  authors:
-    title: Authors
-    color: pinktwo
 kramdown:
   syntax_highlighter_opts:
     block:
