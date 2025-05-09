@@ -27,6 +27,15 @@ callouts:
   warning:
     title: Warning
     color: red
+plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-include-cache
+  - jekyll-sitemap
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
 nav_external_links:
   - title: Home
     url: https://mclegoman.com
