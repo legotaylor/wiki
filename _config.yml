@@ -11,6 +11,21 @@ gh_edit_repository: "https://github.com/legotaylor/wiki"
 gh_edit_branch: "main"
 gh_edit_view_mode: "edit"
 color_scheme: dark
+callouts:
+  highlight:
+    color: yellow
+  important:
+    title: Important
+    color: blue
+  new:
+    title: New
+    color: green
+  note:
+    title: Note
+    color: purple
+  warning:
+    title: Warning
+    color: red
 nav_external_links:
   - title: Home
     url: https://mclegoman.com
