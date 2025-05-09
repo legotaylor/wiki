@@ -1,6 +1,7 @@
 ---
 title: Documentation
 layout: home
+lang: en
 ---
 # Danny-Taylor's Developer Wiki
 
