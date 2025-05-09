@@ -38,9 +38,12 @@ callouts:
   authors:
     title: Authors
     color: pink
-  authors:
-    title: Authors
-    color: pink
+  contributor:
+    title: Contributor
+    color: lime
+  contributors:
+    title: Contributors
+    color: lime
 kramdown:
   syntax_highlighter_opts:
     block:
