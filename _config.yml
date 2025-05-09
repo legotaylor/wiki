@@ -38,6 +38,7 @@ kramdown:
       line_numbers: false
 plugins:
   - jekyll-polyglot
+  - jekyll-redirect-from
 nav_external_links:
   - title: Home
     url: https://mclegoman.com
