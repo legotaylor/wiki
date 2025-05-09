@@ -9,3 +9,5 @@ gem "just-the-docs", "0.10.1" # pinned to the current release
 group :jekyll_plugins do
    gem "jekyll-polyglot"
 end
+
+gem 'jekyll-redirect-from'
