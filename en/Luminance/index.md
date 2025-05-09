@@ -9,3 +9,6 @@ nav_order: 2
 {: .warning }
 > This website is still under development.  
 > Please report any issues at [https://github.com/legotaylor/wiki/issues](https://github.com/legotaylor/wiki/issues).  
+
+{: .author }
+> [dannytaylor](https://mclegoman.com)

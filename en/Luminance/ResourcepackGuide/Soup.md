@@ -10,6 +10,8 @@ nav_order: 5
 {: .note }
 > This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide), which is licenced under [LGPL-3.0-or-later](https://github.com/mclegoman/luminance/blob/master/licence).
 
+{: .author }
+> [Nettakrim](https://bsky.app/profile/nettakrim.netal.co.uk)
 
 This page is for [Souper Secret Settings](https://modrinth.com/mod/souper-secret-settings) specific resourcepack features.
 

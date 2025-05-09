@@ -10,6 +10,9 @@ nav_order: 2
 {: .note }
 > This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide), which is licenced under [LGPL-3.0-or-later](https://github.com/mclegoman/luminance/blob/master/licence).
 
+{: .author }
+> [Nettakrim](https://bsky.app/profile/nettakrim.netal.co.uk)
+
 To add a shader, we just add a new file for it in `luminance/`
 
 ```

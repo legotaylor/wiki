@@ -10,6 +10,8 @@ nav_order: 6
 {: .note }
 > This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide), which is licenced under [LGPL-3.0-or-later](https://github.com/mclegoman/luminance/blob/master/licence).
 
+{: .author }
+> [dannytaylor](https://mclegoman.com), [Nettakrim](https://bsky.app/profile/nettakrim.netal.co.uk)
 
 This page is for [Perspective](https://modrinth.com/mod/mclegoman-perspective) specific resourcepack features.
 

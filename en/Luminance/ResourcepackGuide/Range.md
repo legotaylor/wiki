@@ -10,6 +10,8 @@ nav_order: 4
 {: .note }
 > This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide), which is licenced under [LGPL-3.0-or-later](https://github.com/mclegoman/luminance/blob/master/licence).
 
+{: .author }
+> [Nettakrim](https://bsky.app/profile/nettakrim.netal.co.uk)
 
 This is specifically to explain `range` configs for uniform overrides, see [Adding Shaders](AddingShaders#dynamic-uniforms) for an overview on how uniform config works
 

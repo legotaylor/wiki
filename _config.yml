@@ -16,7 +16,7 @@ gh_edit_repository: "https://github.com/legotaylor/wiki"
 gh_edit_branch: "main"
 gh_edit_view_mode: "edit"
 color_scheme: dark
-callouts_level: quiet
+callouts_level: loud
 callouts:
   highlight:
     color: yellow
@@ -32,6 +32,9 @@ callouts:
   warning:
     title: Warning
     color: red
+  author:
+    title: Author
+    color: pink
 kramdown:
   syntax_highlighter_opts:
     block:
