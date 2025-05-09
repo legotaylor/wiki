@@ -10,7 +10,7 @@ parent: Resourcepack Guide
 > This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
 
 
-This is specifically to explain `range` configs for uniform overrides, see [Adding Shaders](AddingShaders.md#dynamic-uniforms) for an overview on how uniform config works
+This is specifically to explain `range` configs for uniform overrides, see [Adding Shaders](AddingShaders#dynamic-uniforms) for an overview on how uniform config works
 
 ```json
 (example of how to use range for reference)
@@ -44,7 +44,7 @@ You can mix these, like `[ 10, null ]`, i'm not entirely sure what situation tha
 
 ## Overrides Only
 
-As per the note in [Adding Shaders](AddingShaders.md#dynamic-uniforms), the `range` config is defined by the code in charge of the `"override"`, not the uniforms themselves (like `period` for `"luminance_time"` is), this means you can only use `range` if its part of an override, like this:
+As per the note in [Adding Shaders](AddingShaders#dynamic-uniforms), the `range` config is defined by the code in charge of the `"override"`, not the uniforms themselves (like `period` for `"luminance_time"` is), this means you can only use `range` if its part of an override, like this:
 
 ```json
 will work:

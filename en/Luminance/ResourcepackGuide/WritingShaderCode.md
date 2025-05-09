@@ -590,7 +590,7 @@ This creates an interesting fade out of color into geometry only - in fact that'
 
 The `LinearizeDepth()` function used there is actually slightly inaccurate - minecraft changes its far plane based on render distance
 
-To account for this, luminance has a [dynamic uniform](AddingShaders.md) for the clipping planes!
+To account for this, luminance has a [dynamic uniform](AddingShaders) for the clipping planes!
 
 Using a dynamic uniform is simple - you add it the same as usual, but you call it whatever the dynamic uniforms name is (which you can figure out using soup's gui)
 
@@ -620,7 +620,7 @@ float LinearizeDepth(float depth) {
 
 Note that `luminance_clipping` has two values, so a `vec2` is used, most uniforms only have one value so would just use `float`
 
-You can turn any multi-value uniform into a single value if needed, for instance if you only want the y part of `luminance_pos`, you can do `uniform float luminance_pos_y` - this is also useful when doing [overrides](AddingShaders.md#dynamic-uniforms)
+You can turn any multi-value uniform into a single value if needed, for instance if you only want the y part of `luminance_pos`, you can do `uniform float luminance_pos_y` - this is also useful when doing [overrides](AddingShaders#dynamic-uniforms)
 
 ## Vertex Shaders
 

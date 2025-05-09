@@ -66,10 +66,10 @@ The files in the `luminance/` folder look like this:
 
 `"registries"` is what lists of shaders the shader will show up in
 - `"luminance:main"`: default value if the field is missing, this is where soup and perspective look to get the list of shaders that can be used
-- `"souper_secret_settings:modifiers"`: used by soup for its [modifier system](Soup.md#modifiers), the separate registry means they cant be used as regular shaders (which is good, as they wouldn't work)
+- `"souper_secret_settings:modifiers"`: used by soup for its [modifier system](Soup#modifiers), the separate registry means they cant be used as regular shaders (which is good, as they wouldn't work)
 
 `"custom"` is where any mod specific data is stored
-- soup uses this to categorise shaders with the `"groups"` list, by default adding shaders to the `"edible"` category, meaning they can be chosen when eating soup, but since some soup shaders are particularly disruptive or laggy, not everything is `"edible"`, [see soup's page for more info](Soup.md#soup-groups)
+- soup uses this to categorise shaders with the `"groups"` list, by default adding shaders to the `"edible"` category, meaning they can be chosen when eating soup, but since some soup shaders are particularly disruptive or laggy, not everything is `"edible"`, [see soup's page for more info](Soup#soup-groups)
 
 ## Changing Shaders
 
@@ -84,7 +84,7 @@ assets/minecraft/luminance/sobel.json - will work (as long as the resourcepack i
 }
 ```
 
-Likewise the behaviour of adding a shader to a [Soup Group](Soup.md#soup-groups) depends on if the file path is matched:
+Likewise the behaviour of adding a shader to a [Soup Group](Soup#soup-groups) depends on if the file path is matched:
 
 ```json
 assets/tutorial_shader/luminance/test.json - adds to list
@@ -104,6 +104,6 @@ assets/minecraft/luminance/sobel.json - replaces the list, so sobel gets removed
 
 ## Adding Shaders
 
-Now that your resourcepack is set up to work with luminance, you can [Add Shaders](AddingShaders.md).
+Now that your resourcepack is set up to work with luminance, you can [Add Shaders](AddingShaders).
 
 You can download the resourcepack made in this guide for reference [Here](https://github.com/mclegoman/luminance/blob/development-1.21/ResourcepackGuide/TutorialShader.zip)

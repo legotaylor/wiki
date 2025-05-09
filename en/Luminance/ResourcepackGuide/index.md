@@ -27,7 +27,7 @@ This guide is written by [Nettakrim](https://bsky.app/profile/nettakrim.netal.co
 
 # Guides for mods using Luminance
 
-Souper Secret Settings has a few specific features, see [its page](Soup.md) for a guide.
+Souper Secret Settings has a few specific features, see [its page](Soup) for a guide.
 
-As does Perspective, see [it's page](./Perspective.md) for a guide.
+As does Perspective, see [it's page](./Perspective) for a guide.
 

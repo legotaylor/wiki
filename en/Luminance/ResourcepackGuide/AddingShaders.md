@@ -37,7 +37,7 @@ Now that Luminance knows about the shader, the shader needs its render passes se
 
 It's very useful to be able to reference existing shaders, some of these can be found in the [Minecraft Jar](https://mcasset.cloud/1.21.4/assets/minecraft/post_effect), however a lot have now been removed from the game, and are instead implemented [in Luminance itself](https://github.com/mclegoman/luminance/tree/development-1.21/common/src/main/resources/resourcepacks) (likewise all of [Soup's Shaders](https://github.com/Nettakrim/Souper-Secret-Settings/tree/luminance/src/main/resources/resourcepacks/soup) can be found in its resourcepacks)
 
-*This section will explain how to add a modified vanilla shader program, to see how to write custom shaders, skip to the section on [writing shader code](WritingShaderCode.md), which will assume you have understanding of how the post shader files covered in this section work.*
+*This section will explain how to add a modified vanilla shader program, to see how to write custom shaders, skip to the section on [writing shader code](WritingShaderCode), which will assume you have understanding of how the post shader files covered in this section work.*
 
 # Post Shaders
 
@@ -542,7 +542,7 @@ When the values are being overridden, you do still need to have a `"values"` fie
 
 The `"config"` field has a list of uniform config values, which determines how the uniforms are turning into the actual numbers. the names are prefixed with the index of the value being overriden, so 0_ for configuring the first override value, 1_ for the second etc
 - `"luminance_time"` has a config value called `period` for how often it loops
-- when overriding, all uniforms have a `range` config, which remaps the range of the uniform, in this case from `0-1` to `4-5`, there are quite a few subtleties with how this works, for which I've made a [dedicated page](Range.md)
+- when overriding, all uniforms have a `range` config, which remaps the range of the uniform, in this case from `0-1` to `4-5`, there are quite a few subtleties with how this works, for which I've made a [dedicated page](Range)
 
 If a shader's uniform name is already the name of a dynamic uniform (like it is in luminace:post/merge), it can be configured the same way, with a prefix of `0_`:
 ```json
@@ -558,7 +558,7 @@ If a shader's uniform name is already the name of a dynamic uniform (like it is 
 }
 ```
 
-- note that as this isnt an override, you *cannot* use `range` with this, you'd need to first override the `"luminance_time"` uniform with `[ "luminance_time" ]`, [like this](Range.md#overrides-only)
+- note that as this isnt an override, you *cannot* use `range` with this, you'd need to first override the `"luminance_time"` uniform with `[ "luminance_time" ]`, [like this](Range#overrides-only)
 
 # Tricking a Shader
 
@@ -681,7 +681,7 @@ We've already seen the `"uniforms"` bit of this earlier, but heres the whole pro
 
 The `"vertex"` and `"fragment"` fields are what code the gpu is actually running, which resolves to the same `assets/<namespace>/shaders/post/<id>.<type>` for a given `<namespace>:post/<id>` as the program files, with the <type> for vertex being .vsh, and fragment .fsh
 
-More information on this in [The Next Section](WritingShaderCode.md) (note that fragment shader is usually the important one, and that the vertex shader is *usually* `minecraft:post/sobel`, which doesnt actually have much to do with the sobel shader)
+More information on this in [The Next Section](WritingShaderCode) (note that fragment shader is usually the important one, and that the vertex shader is *usually* `minecraft:post/sobel`, which doesnt actually have much to do with the sobel shader)
 
 The actually important part here is the "samplers" section, which shows two samplers `"InSampler"` and `"PrevSampler"`, these are the names we saw earlier back in the post_effect
 
@@ -865,6 +865,6 @@ assets/tutorial_shader/lang/en_us.json
 
 We could also implement the luminance:post/merge thing that other shaders have relatively easily, but i wont do that here as its not important (it would just replace the final `... -> minecraft:post/blit` with `... -> luminance:post/merge -> minecraft:post/blit`)
 
-We've already looked a little at the program files, but how do we make them? and what do they actually do? well, for that we need to learn how to [Write Shader Code](WritingShaderCode.md) - However a key takeaway here is that you can get a lot of mileage out of misusing existing shaders!
+We've already looked a little at the program files, but how do we make them? and what do they actually do? well, for that we need to learn how to [Write Shader Code](WritingShaderCode) - However a key takeaway here is that you can get a lot of mileage out of misusing existing shaders!
 
 You can download the resourcepack made in this guide for reference [Here](https://github.com/mclegoman/luminance/blob/development-1.21/ResourcepackGuide/TutorialShader.zip)
