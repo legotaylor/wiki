@@ -2,7 +2,7 @@
 title: Range Config
 layout: page
 lang: en
-parent: Resourcepack Guide
+parent: Adding a Shader
 nav_order: 4
 ---
 # Range Config
