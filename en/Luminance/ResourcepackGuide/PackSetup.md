@@ -95,7 +95,7 @@ assets/minecraft/luminance/sobel.json - replaces the list, so sobel gets removed
 }
 ```
 
-![](soupgroup.png)
+![](https://wiki.mclegoman.com/assets/img/soupgroup.png)
 
 
 ## Adding Shaders
