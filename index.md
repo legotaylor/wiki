@@ -2,6 +2,7 @@
 title: Documentation
 layout: home
 lang: en
+redirect_from: /en
 ---
 # Danny-Taylor's Developer Wiki
 
