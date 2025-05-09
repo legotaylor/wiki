@@ -6,6 +6,10 @@ parent: Resourcepack Guide
 ---
 # Adding a Shader
 
+{: .note }
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
+
+
 To add a shader, we just add a new file for it in `luminance/`
 
 ```

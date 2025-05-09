@@ -6,6 +6,10 @@ parent: Resourcepack Guide
 ---
 # Perspective
 
+{: .note }
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
+
+
 This page is for [Perspective](https://modrinth.com/mod/mclegoman-perspective) specific resourcepack features.
 
 ```

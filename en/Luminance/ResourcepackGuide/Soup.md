@@ -6,6 +6,10 @@ parent: Resourcepack Guide
 ---
 # Souper Secret Settings
 
+{: .note }
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
+
+
 This page is for [Souper Secret Settings](https://modrinth.com/mod/souper-secret-settings) specific resourcepack features.
 
 ```

@@ -6,6 +6,10 @@ parent: Resourcepack Guide
 ---
 # Resourcepack Setup
 
+{: .note }
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
+
+
 For these examples, I will be using a folder layout that looks like this:
 
 ```

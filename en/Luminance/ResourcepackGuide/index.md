@@ -6,6 +6,9 @@ parent: Luminance
 ---
 # Resourcepack Guide
 
+{: .note }
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
+
 This guide is split into 3 parts, each part assumes knowledge from the previous section
 
 1. [Setting up a Resourcepack](./PackSetup)

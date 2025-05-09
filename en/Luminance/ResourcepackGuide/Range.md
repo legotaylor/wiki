@@ -6,6 +6,10 @@ parent: Resourcepack Guide
 ---
 # Range Config
 
+{: .note }
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
+
+
 This is specifically to explain `range` configs for uniform overrides, see [Adding Shaders](AddingShaders.md#dynamic-uniforms) for an overview on how uniform config works
 
 ```json

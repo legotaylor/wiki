@@ -6,6 +6,10 @@ parent: Resourcepack Guide
 ---
 # Writing Shader Code
 
+{: .note }
+> This guide has been ported over from [mclegoman/luminance:ResourcepackGuide](https://github.com/mclegoman/luminance/blob/master/ResourcepackGuide).
+
+
 ```
 TutorialShader
 ├── assets
