@@ -13,6 +13,6 @@ gh_edit_branch: "main"
 gh_edit_view_mode: "edit"
 color_scheme: dark
 nav_external_links:
-    title: Home
+  - title: Home
     url: https://mclegoman.com
     hide_icon: true
