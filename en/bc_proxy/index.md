@@ -11,7 +11,7 @@ nav_exclude: true
 
 {: .note }
 > Betacraft **launcher** is not compatible with Fabric/Quilt Loader ([OrnitheMC](https://ornithemc.net/))!  
-> If you do not need Fabric or Quilt Loader ([OrnitheMC](https://ornithemc.net/)), you can download the betacraft launcher [here](https://github.com/betacraftuk/betacraft-launcher/releases) instead.  
+> If you do not need Fabric or Quilt Loader, you can download the betacraft launcher [here](https://github.com/betacraftuk/betacraft-launcher/releases) instead.  
 > If you are using Fabric/Quilt Loader, continue reading.  
 
 As time goes on, Mojang updates their apis, and with newer hardware and system updates, issues arise.  
