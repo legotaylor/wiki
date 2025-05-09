@@ -4,7 +4,8 @@ layout: home
 ---
 # Danny-Taylor's Developer Wiki
 
-{: .warning } This website is still under development. Please report any issues at [https://github.com/legotaylor/wiki/issues](https://github.com/legotaylor/wiki/issues).
+{: .warning }
+This website is still under development. Please report any issues at [https://github.com/legotaylor/wiki/issues](https://github.com/legotaylor/wiki/issues).
 
 This site is currently a work-in-progress, check the sidebar to see what's avaliable.
 
