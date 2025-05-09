@@ -7,7 +7,7 @@ nav_order: 6
 ---
 # Perspective
 
-{: .author }
+{: .authors }
 > [dannytaylor](https://mclegoman.com), [Nettakrim](https://bsky.app/profile/nettakrim.netal.co.uk)
 
 {: .note }
