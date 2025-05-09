@@ -31,6 +31,8 @@ kramdown:
   syntax_highlighter_opts:
     block:
       line_numbers: false
+plugins:
+  - jekyll-polyglot
 nav_external_links:
   - title: Home
     url: https://mclegoman.com
