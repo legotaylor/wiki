@@ -2,7 +2,7 @@ title: dannytaylor
 description: 
 theme: just-the-docs
 url: https://wiki.mclegoman.com
-logo: "https://mclegoman.com/assets/img/favicon.png"
+favicon_ico: "https://mclegoman.com/assets/img/favicon.png"
 search_enabled: true
 last_edit_timestamp: true
 last_edit_time_format: "%b %e %Y at %I:%M %p"
