@@ -4,7 +4,7 @@ layout: page
 lang: en
 nav_order: 2
 ---
-# ![Luminance](https://raw.githubusercontent.com/mclegoman/luminance/refs/heads/development-1.21/assets/logo/luminance.png)  
+# ![Luminance](https://wiki.mclegoman.com/assets/img/luminance.png)  
 Luminance is a library mod that is primarily designed to help other mods with shaders.  
 
 {: .author }
