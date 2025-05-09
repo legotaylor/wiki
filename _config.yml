@@ -1,5 +1,5 @@
 title: dannytaylor
-description: 
+description: "Documentation for mods made by dannytaylor."
 theme: just-the-docs
 url: https://wiki.mclegoman.com
 favicon_ico: "https://mclegoman.com/assets/img/favicon.png"
@@ -15,4 +15,3 @@ color_scheme: dark
 nav_external_links:
   - title: Home
     url: https://mclegoman.com
-    hide_icon: true
