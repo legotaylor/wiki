@@ -1,5 +1,9 @@
 title: dannytaylor
 theme: just-the-docs
+languages: ["en"]
+default_lang: "en"
+exclude_from_localization: ["javascript", "images", "css", "public", "sitemap"]
+parallel_localization: true
 url: https://wiki.mclegoman.com
 favicon_ico: "https://mclegoman.com/assets/img/favicon.png"
 search_enabled: true
