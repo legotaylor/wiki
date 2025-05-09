@@ -11,3 +11,8 @@ gh_edit_link_text: "Edit"
 gh_edit_repository: "https://github.com/legotaylor/wiki"
 gh_edit_branch: "main"
 gh_edit_view_mode: "edit"
+color_scheme: dark
+nav_external_links:
+    title: Home
+    url: https://mclegoman.com
+    hide_icon: true
