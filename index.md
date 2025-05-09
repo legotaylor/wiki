@@ -2,7 +2,7 @@
 title: Documentation
 layout: home
 ---
-# Welcome to dannytaylor's mod documentation!
+# Danny-Taylor's Developer Wiki
 {: .warning }
 This website is still under development. Please report any issues at [https://github.com/legotaylor/wiki/issues](https://github.com/legotaylor/wiki/issues).
 
